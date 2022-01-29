@@ -76,7 +76,15 @@ sh openapi/dredd_cmd/dredd-names.sh
 
 ## その他
 
-dreddのログはとても長いので、 dredd_cmd/tmp/dredd_result.txt に詳細が出力されます。
+dreddのログはとても長いので、 `dredd_cmd/tmp/dredd_result.txt` に詳細が出力されます。
 
 OASが分割されているとdreddは利用できないので、swagger-mergerで統合するように設定されています。
+
+## dreddの注意点
+
+OASが推奨される文法通りに書かれていないと dredd が走りません。
+
+よくあるのが description の項目がない場合、 object が正しく設定されていない場合、 exampleの値が指定されていない場合 などです。
+
+`dredd_cmd/tmp/dredd_result.txt` などを確認してみてください。
 
