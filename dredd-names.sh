@@ -9,8 +9,10 @@ properdom/swagger-merger swagger-merger \
 -i app/$FILE \
 -o app/$DREDD_DIR/tmp/merged.yml
 
-# APIがOAS通りのレスポンスを返しているか確認する。
-# 出力が長いので、詳細は ./dredd/dredd_result.txt に出力する。
+# リクエストの名前を出力する
+# この名前を使って hookファイルの 
+# hooks.before や hooks.after 関数の第一引数に指定することで
+# 個別のテストを制御できる
 
 docker run -it --rm -v $SCRIPT_DIR/..:/openapi \
 --add-host=host.docker.internal:host-gateway \
