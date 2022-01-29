@@ -24,13 +24,6 @@ openapi/default.yml
 openapi/dredd_cmd/*
 ```
 
-
-## 利用方法
-
-```
-sh openapi/dredd_cmd/dredd.sh
-```
-
 ## 設定方法
 
 #### params.cfg について
@@ -75,6 +68,14 @@ sh openapi/dredd_cmd/dredd-names.sh
 ```
 
 で取得可能です。
+
+
+## 利用方法
+
+```
+sh openapi/dredd_cmd/dredd.sh
+```
+
 
 ## その他
 
