@@ -36,7 +36,9 @@ sh openapi/dredd_cmd/dredd.sh
 #### params.cfg について
 
 params.cfgを設定することで、検証先のAPIのURL、OASのファイル名などを指定します。
+
 Dockerを利用しているので、API_URLのホストはhost.docker.internalを指定しています。
+
 **Dockerのバージョンが古いとこのホスト名が使えないので、Dockerは v 20.10.0 以降のものを利用してください。**
 
 ```
