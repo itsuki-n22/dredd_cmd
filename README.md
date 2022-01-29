@@ -2,6 +2,10 @@
 
 dreddを簡単に使えるようにしたシェルスクリプトです。
 
+## Requirement
+
+Docker `v 20.10.0` 以降
+
 ## 準備
 
 openapiのymlファイルがある場所へ移動し、そこで `git clone` をしてください。
