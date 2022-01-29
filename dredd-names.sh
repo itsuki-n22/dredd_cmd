@@ -16,5 +16,6 @@ docker run -it --rm -v $SCRIPT_DIR/..:/openapi \
 --add-host=host.docker.internal:host-gateway \
 apiaryio/dredd sh -c \
 "dredd openapi/$DREDD_DIR/tmp/merged.yml $API_URL \
--d --names --no-color| \
-grep -e 'info\:' -e 'fail\:' -e 'complete\:'"
+-d --names --no-color | \
+grep -e 'info\:' | \
+cut -d' ' -f 2-"
