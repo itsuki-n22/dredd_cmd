@@ -57,7 +57,7 @@ API_URL='http://host.docker.internal:8000/api/'
 
 細かく制御する場合は、中身を確認していただけると嬉しいです。
 
-例えば、hook.js では、401のレスポンスのテストはスキップするように設定してあります。
+例えば、hook.js では、401のレスポンスのテストはスキップする記述があります。
 
 各APIのリクエストごとにテストを制御可能ですが、それにはリクエスト名が必要です。
 
@@ -76,6 +76,11 @@ sh openapi/dredd_cmd/dredd-names.sh
 sh openapi/dredd_cmd/dredd.sh
 ```
 
+## リント
+
+```
+sh openapi/dredd_cmd/lint.sh
+```
 
 ## その他
 
